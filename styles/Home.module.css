@@ -1,0 +1,30 @@
+.container{
+  padding: 0px 10%;
+}
+
+.header{
+  padding: 50px 0px 50px;
+  text-align: center;
+  background-color: rgb(146, 185, 251);
+}
+.title{
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.formBox input{
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 300px;
+}
+.formBox button{
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 13px 25px;
+  background-color: rgb(36, 84, 196);
+  border: none;
+  outline: none;
+}

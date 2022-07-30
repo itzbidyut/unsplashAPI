@@ -1,0 +1,103 @@
+
+
+
+/* header */
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.galleryBox{
+    width: 1200px;
+}
+.profileBox{
+    display: flex;
+    
+}
+.imageBox{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+   justify-content: center;
+}
+.imageWrapper{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+   
+}
+.singleImage{
+    position: absolute;
+}
+.profileBox{
+    z-index: 10;
+    padding: 10px;
+}
+.profileImage{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.username{
+    margin-bottom: 0px;
+}
+.userDetails{
+    margin-left: 20px;
+}
+.profileBox{
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(77,77,77);
+    background: linear-gradient(0deg, rgba(77,77,77,1) 0%, rgba(255,255,255,0) 99%);
+    width: 100%;
+}
+.username{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.bio{
+    margin-bottom: 0px;
+    color: white;
+    padding-right: 15px;
+}
+.likeBox{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+}
+.likeBox p{
+    display:block;
+    width: 100%;
+    background-color: white;
+}
+.profileImageBox{
+    display: flex;
+    align-items: center;
+}
+.imageWrapper:hover .likeBox{
+    opacity: 1;
+}
+.likeBox p{
+    margin-bottom: 5px;
+    text-align: right;
+}
+.bio{
+    font-size: 12px;
+}
+.pagination{
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+.pagiButton{
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 50px;
+}
