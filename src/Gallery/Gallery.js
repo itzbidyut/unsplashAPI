@@ -32,9 +32,10 @@ export default function Gallery({
             <div className={style.imageWrapper} key={item.id}>
               <Image
                 src={item.urls.regular}
-                // loader={imageLoader}
-                alt="Picture"
-                layout="fill"
+                width="400px"
+                height="380px"
+                objectFit="cover"
+                alt="Brand logo"
                 className={style.singleImage}
               />
 
@@ -81,10 +82,4 @@ export default function Gallery({
       </div>
     </div>
   );
-}
-export async function getServerSideProps() {
-  // const APIkey =  `G8LNgI-t81yyyfL5zfwtzvl9O5oOy7MTO4goyHnIBaY`;
-  // const res = await fetch(`https://api.unsplash.com/photos/?client_id=G8LNgI-t81yyyfL5zfwtzvl9O5oOy7MTO4goyHnIBaY`);
-  // const data = await res.json()
-  // return { props: { data } }
 }

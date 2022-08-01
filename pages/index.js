@@ -79,7 +79,12 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <>
+      <Head>
+        <title>Unsplash API </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Unsplash API " />
+      </Head>
       <div className={style.header}>
         <p className={style.title}>Unsplash API</p>
         <div className={style.formBox}>
@@ -90,6 +95,7 @@ export default function Home() {
               onChange={handleChange}
               className="form-control"
               placeholder="search images"
+              required
             />
 
             <button className="submitBtn">Search Image</button>
@@ -112,6 +118,6 @@ export default function Home() {
           searchValue={searchValue}
         />
       )}
-    </div>
+    </>
   );
 }
