@@ -4,7 +4,7 @@ import style from "../styles/Home.module.css";
 import Gallery from "../src/Gallery/Gallery";
 import React, { useState, useEffect } from "react";
 
-const APIkey = `G8LNgI-t81yyyfL5zfwtzvl9O5oOy7MTO4goyHnIBaY`;
+const APIkey = process.env.REACT_APP_UNSPLASH_API;
 
 export default function Home() {
   const [images, setImages] = useState([]);
